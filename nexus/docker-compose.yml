@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  web:
+    image: 192.168.227.11:8082/mysite-web:1.0
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
